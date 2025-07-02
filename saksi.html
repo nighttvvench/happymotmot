@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saksi ang Langit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top right, #fdf2f8, #e8eaf6);
+      font-family: 'Quicksand', sans-serif;
+      overflow-y: auto;
+      height: 100vh;
+      position: relative;
+    }
+
+    .letter {
+      max-width: 700px;
+      margin: 60px auto 100px;
+      background: white;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #a8446c;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #444;
+      line-height: 2;
+      text-align: justify;
+      margin-bottom: 25px;
+    }
+
+    .next-button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      background-color: #a8446c;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .next-button:hover {
+      background-color: #87395b;
+    }
+
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: #fff;
+      border-radius: 50%;
+      animation: twinkle 3s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="letter">
+  <h1>Saksi ang Langit 🌙</h1>
+
+  <p>
+    Love, there are nights I look up at the sky and wonder how I deserve a soul like yours.
+    Each star seems to whisper your name, echoing all the quiet promises we've made under dim city lights and hushed midnight calls.
+  </p>
+
+  <p>
+    <em>Saksi ang langit sa ating mga pangarap, sa bawat salitang "mahal kita" na walang pag-aalinlangan.</em>
+    I can still feel your hand in mine when we swore we'd hold on — no matter how far, how hard, how uncertain the world becomes.
+  </p>
+
+  <p>
+    We've built something so fragile yet so strong — like constellations drawn in faith.
+    Even when clouds of doubt passed between us, the stars stayed. Our love stayed. Because it was never just words — it was always action. Always presence.
+  </p>
+
+  <p>
+    And if the world tries to drown our voices in noise, remember: heaven itself bears witness.
+    It saw how we stayed through distance. Through silence. Through growing pains and unmet expectations.
+  </p>
+
+  <p>
+    You are the only one I’ve written my universe around — and every “I love you” I said, I meant with the weight of all the galaxies inside me.
+    If ever you feel unsure, look up. Even the moon will remind you: this love is real.
+  </p>
+
+  <p>
+    Thank you for being the one who stayed. Who chose me. Who makes heaven worth praying to.
+    May the skies always watch over you the way I do — fiercely, quietly, endlessly.
+  </p>
+
+  <p>
+    Mula noon hanggang ngayon, ikaw pa rin. Lagi’t lagi. 💗
+  </p>
+
+  <p>
+    Sa puso't panalangin,<br/>
+    🌙 benot
+  </p>
+
+  <button class="next-button" onclick="window.location.href='balisong.html'">
+    Read the next letter ➤
+  </button>
+</div>
+
+<div class="stars">
+  <script>
+    for (let i = 0; i < 80; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 100 + 'vh';
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.animationDuration = (2 + Math.random() * 3) + 's';
+      document.querySelector('.stars').appendChild(star);
+    }
+  </script>
+</div>
+
+</body>
+</html>
