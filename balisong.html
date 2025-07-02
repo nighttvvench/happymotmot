@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Balisong</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at bottom left, #ffeef3, #e6e6ff);
+      font-family: 'Quicksand', sans-serif;
+      overflow-y: auto;
+      height: 100vh;
+      position: relative;
+    }
+
+    .letter {
+      max-width: 700px;
+      margin: 60px auto 100px;
+      background: white;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #b03566;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #444;
+      line-height: 2;
+      text-align: justify;
+      margin-bottom: 25px;
+    }
+
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: #fff;
+      border-radius: 50%;
+      animation: twinkle 4s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+
+    .end-message {
+      text-align: center;
+      font-size: 1.1em;
+      color: #999;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="letter">
+  <h1>Balisong 💞</h1>
+
+  <p>
+    I never thought I'd find someone who could disarm me — like a balisong, carefully opened, every layer unfolding into something beautiful. 
+    You came into my life and without effort, you changed everything.
+  </p>
+
+  <p>
+    Like the song says, <em>“Your smile, it melts my heart…”</em> and it truly does — every single time. 
+    You are my calm in the chaos, my clarity in the noise, my home in the unknown.
+  </p>
+
+  <p>
+    You caught me off guard in the best way possible. With you, I don’t need to hide or pretend. 
+    You make love feel safe, and falling into you feels like the most natural thing in the world.
+  </p>
+
+  <p>
+    Just like a balisong, our love may have sharp edges — moments of challenge, vulnerability, and growth — but it opens into something so rare, so precious. 
+    Something I will carry with me, always.
+  </p>
+
+  <p>
+    I love you — not just for who you are when everything is easy, but for who we are when things get tough. 
+    You are worth every second, every word, every heartbeat.
+  </p>
+
+  <p>
+    If I could hold you in a verse, I’d sing forever.  
+    But instead, I’ll love you with everything I am, every day I’m given.
+  </p>
+
+  <p>
+    You are my unexpected miracle.  
+    And I will spend forever choosing you — like a song stuck in my heart, soft and unforgettable.
+  </p>
+
+  <p>
+    Yours, always,<br/>
+    💘 benot
+  </p>
+
+  <div class="end-message">This is the last page — but never the end of the love. 💌</div>
+</div>
+
+<div class="stars">
+  <script>
+    for (let i = 0; i < 80; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 100 + 'vh';
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.animationDuration = (2 + Math.random() * 4) + 's';
+      document.querySelector('.stars').appendChild(star);
+    }
+  </script>
+</div>
+
+</body>
+</html>
